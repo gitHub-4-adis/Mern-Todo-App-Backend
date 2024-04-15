@@ -21,3 +21,5 @@ app.use((req, res) => {
 app.listen(process.env.PORT, '0.0.0.0', () => {
     const conn = connect();
 });
+
+module.exports = app;
