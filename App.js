@@ -8,6 +8,9 @@ const app = express();
 import connect from './db/connect.js';
 import router from './routes/apiRoutes.js';
 
+app.listen(process.env.PORT, '0.0.0.0', () => {
+    const conn = connect();
+});
 app.use(cors({
     origin: "*"
 }));
@@ -18,8 +21,5 @@ app.use((req, res) => {
     res.status(404).send("Error: 404 not founddkfsdjflsdjflds");
 });
 
-app.listen(process.env.PORT, '0.0.0.0', () => {
-    const conn = connect();
-});
 
 export default app;
