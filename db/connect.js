@@ -10,4 +10,4 @@ async function connect() {
     }
 }
 
-export default connec
+export default connect
