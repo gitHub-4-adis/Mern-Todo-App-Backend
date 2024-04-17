@@ -5,8 +5,8 @@ import express from 'express';
 import cors from 'cors';
 const app = express();
 
-import connect from './db/connect.js';
-import router from './routes/apiRoutes.js';
+import connect from './api/db/connect.js';
+import router from './api/routes/apiRoutes.js';
 
 app.use(cors({
     origin: "*"
