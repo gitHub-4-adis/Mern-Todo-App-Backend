@@ -3,7 +3,7 @@ dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-const app = express();
+const app = express()
 
 import connect from './api/db/connect.js';
 import router from './api/routes/apiRoutes.js';
