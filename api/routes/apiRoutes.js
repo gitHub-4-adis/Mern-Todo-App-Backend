@@ -6,10 +6,7 @@ const router = express.Router();
 // todo list
 router.route('/')
 .get(todoListController.fetchTodo)
-.post(todoListController.addTodoItem);
-
-// single item
-router.route('/item')
+.post(todoListController.addTodoItem)
 .put(todoListController.updateTodoItem);
 
 // update/delete an item

@@ -68,7 +68,6 @@ export default class todoListController {
     static async deleteTodoItem(req, res) {
         try {
             const item = await listModel.deleteOne({_id: req.params.id});
-            console.log(item);
             res.json(item);
 
         } catch(err) {
